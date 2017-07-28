@@ -49,8 +49,9 @@ foo(); //undefined
 
 # About binding
 There are 4 different bindings. 
-## 1. default binding
-## 2. implicit binding
-## 3. explicit and hard binding
-## 4. `new` binding
+1. default binding. undefined in strict mode, global object otherwise.
+2. implicit binding. Called with a context object owning the call? Use that context object.
+3. explicit and hard binding. Called with call or apply (or bind)? Use the specified object.
+4. `new` binding. Called with new? Use the newly constructed object.
+
 Precedence: 4 > 3 > 2 > 1
