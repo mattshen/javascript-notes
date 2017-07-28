@@ -1,6 +1,7 @@
 * About *this*
+* Binding
 ----
-
+# About `this`
 ##  What `this` is not 
 1. `this` is not a reference to the function itself. The following code trying to track how many time `foo` is called doesn't work as expected. 
 ```js
@@ -45,3 +46,11 @@ foo(); //undefined
 
 ## What `this` is 
 `this` is a runtime binding. The binding is made when a function is invoked and determinded entirely by the call-site where the function is called. 
+
+# About binding
+There are 4 different bindings. 
+## 1. default binding
+## 2. implicit binding
+## 3. explicit and hard binding
+## 4. `new` binding
+Precedence: 4 > 3 > 2 > 1
