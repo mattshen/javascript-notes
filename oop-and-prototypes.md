@@ -1,7 +1,7 @@
 * About *this*
 ----
 
-##  What this is not? 
+##  What `this` is not 
 1. `this` is not a reference to the function itself. The following code trying to track how many time `foo` is called doesn't work as expected. 
 ```js
 function foo(num) {
@@ -42,3 +42,6 @@ function bar() {
 
 foo(); //undefined
 ```
+
+## What `this` is 
+`this` is a runtime binding. The binding is made when a function is invoked and determinded entirely by the call-site where the function is called. 
